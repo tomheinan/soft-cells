@@ -11,11 +11,13 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: NSViewController {
+    
+    fileprivate(set) var scene: SKScene?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let scene = GameScene.newGameScene()
+        scene = GameScene(size: view.bounds.size)
         
         // Present the scene
         let skView = self.view as! SKView
@@ -26,6 +28,31 @@ class GameViewController: NSViewController {
         skView.showsFPS = true
         skView.showsNodeCount = true
     }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        
+        if let mainWindow = NSApplication.shared().windows.first {
+            mainWindow.delegate = self
+        }
+    }
+    
+    override func viewWillDisappear() {
+        super.viewWillDisappear()
+        
+        if let mainWindow = NSApplication.shared().windows.first {
+            mainWindow.delegate = nil
+        }
+    }
 
+}
+
+extension GameViewController: NSWindowDelegate {
+    
+    func windowWillResize(_ sender: NSWindow, to frameSize: NSSize) -> NSSize {
+        scene?.size = frameSize
+        return frameSize
+    }
+    
 }
 

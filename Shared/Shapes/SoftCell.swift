@@ -9,15 +9,15 @@
 import CoreGraphics
 import GameplayKit
 
-open class SoftCell {
+class SoftCell {
     
     let roundingFactor: CGFloat = 0.4
     
-    open fileprivate(set) var seed: UInt64
-    open fileprivate(set) var numVertices: Int
-    open fileprivate(set) var arcLengths: Array<CGFloat> = Array()
+    fileprivate(set) var seed: UInt64
+    fileprivate(set) var numVertices: Int
+    fileprivate(set) var arcLengths: Array<CGFloat> = Array()
     
-    public init(seed: UInt64) {
+    init(seed: UInt64) {
         self.seed = seed
         let randomSource = GKMersenneTwisterRandomSource(seed: self.seed)
         
