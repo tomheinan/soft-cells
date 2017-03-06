@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E25AA88F1E6E2E280079C169 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA88D1E6E2E280079C169 /* Circle.swift */; };
+		E25AA8901E6E2E280079C169 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA88E1E6E2E280079C169 /* Line.swift */; };
+		E25AA8911E6E2E2E0079C169 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA88E1E6E2E280079C169 /* Line.swift */; };
+		E25AA8921E6E2E2E0079C169 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA88E1E6E2E280079C169 /* Line.swift */; };
+		E25AA8931E6E2E300079C169 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA88D1E6E2E280079C169 /* Circle.swift */; };
+		E25AA8941E6E2E310079C169 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA88D1E6E2E280079C169 /* Circle.swift */; };
+		E25AA8961E6E2E400079C169 /* SoftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8951E6E2E400079C169 /* SoftCell.swift */; };
+		E25AA8971E6E2E430079C169 /* SoftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8951E6E2E400079C169 /* SoftCell.swift */; };
+		E25AA8981E6E2E440079C169 /* SoftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8951E6E2E400079C169 /* SoftCell.swift */; };
+		E25AA89B1E6E2E700079C169 /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */; };
+		E25AA89C1E6E2E700079C169 /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */; };
+		E25AA89D1E6E2E720079C169 /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */; };
+		E25AA89E1E6E2E720079C169 /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */; };
+		E25AA89F1E6E2E750079C169 /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */; };
+		E25AA8A01E6E2E750079C169 /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */; };
+		E25AA8A31E6E2EA60079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
+		E25AA8A41E6E2EA90079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
+		E25AA8A51E6E2EAA0079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
 		E2C1C2B41E6B54240018C58B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2B31E6B54240018C58B /* AppDelegate.swift */; };
 		E2C1C2B61E6B54240018C58B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2B51E6B54240018C58B /* GameViewController.swift */; };
 		E2C1C2B91E6B54240018C58B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2B71E6B54240018C58B /* Main.storyboard */; };
@@ -17,33 +35,9 @@
 		E2C1C2EC1E6B54240018C58B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2EB1E6B54240018C58B /* AppDelegate.swift */; };
 		E2C1C2EE1E6B54240018C58B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2ED1E6B54240018C58B /* GameViewController.swift */; };
 		E2C1C2F11E6B54240018C58B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2EF1E6B54240018C58B /* Main.storyboard */; };
-		E2C1C2F31E6B54240018C58B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2A81E6B54230018C58B /* Actions.sks */; };
-		E2C1C2F41E6B54240018C58B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2A81E6B54230018C58B /* Actions.sks */; };
-		E2C1C2F51E6B54240018C58B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2A81E6B54230018C58B /* Actions.sks */; };
-		E2C1C2F61E6B54240018C58B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2A91E6B54230018C58B /* GameScene.sks */; };
-		E2C1C2F81E6B54240018C58B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2A91E6B54230018C58B /* GameScene.sks */; };
-		E2C1C2F91E6B54240018C58B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2A91E6B54230018C58B /* GameScene.sks */; };
-		E2C1C2FA1E6B54240018C58B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2AA1E6B54230018C58B /* GameScene.swift */; };
-		E2C1C2FC1E6B54240018C58B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2AA1E6B54230018C58B /* GameScene.swift */; };
-		E2C1C2FD1E6B54240018C58B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2AA1E6B54230018C58B /* GameScene.swift */; };
 		E2C1C2FE1E6B54240018C58B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2AB1E6B54240018C58B /* Assets.xcassets */; };
 		E2C1C3001E6B54240018C58B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2AB1E6B54240018C58B /* Assets.xcassets */; };
 		E2C1C3011E6B54240018C58B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2AB1E6B54240018C58B /* Assets.xcassets */; };
-		E2C1C3181E6B58800018C58B /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3171E6B58800018C58B /* Circle.swift */; };
-		E2C1C31A1E6B58800018C58B /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3171E6B58800018C58B /* Circle.swift */; };
-		E2C1C31B1E6B58800018C58B /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3171E6B58800018C58B /* Circle.swift */; };
-		E2C1C31D1E6B58CF0018C58B /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C31C1E6B58CF0018C58B /* Line.swift */; };
-		E2C1C31F1E6B58CF0018C58B /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C31C1E6B58CF0018C58B /* Line.swift */; };
-		E2C1C3201E6B58CF0018C58B /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C31C1E6B58CF0018C58B /* Line.swift */; };
-		E2C1C3231E6B5E100018C58B /* SoftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3221E6B5E100018C58B /* SoftCell.swift */; };
-		E2C1C3251E6B5E100018C58B /* SoftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3221E6B5E100018C58B /* SoftCell.swift */; };
-		E2C1C3261E6B5E100018C58B /* SoftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3221E6B5E100018C58B /* SoftCell.swift */; };
-		E2C1C32D1E6B79B50018C58B /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C32C1E6B79B50018C58B /* SoftCellComposer.swift */; };
-		E2C1C32E1E6B79B50018C58B /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C32C1E6B79B50018C58B /* SoftCellComposer.swift */; };
-		E2C1C32F1E6B79B50018C58B /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C32C1E6B79B50018C58B /* SoftCellComposer.swift */; };
-		E2C1C3311E6B7CE20018C58B /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3301E6B7CE20018C58B /* SoftCellComposition.swift */; };
-		E2C1C3321E6B7CE20018C58B /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3301E6B7CE20018C58B /* SoftCellComposition.swift */; };
-		E2C1C3331E6B7CE20018C58B /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C3301E6B7CE20018C58B /* SoftCellComposition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,9 +54,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E2C1C2A81E6B54230018C58B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		E2C1C2A91E6B54230018C58B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		E2C1C2AA1E6B54230018C58B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E25AA88D1E6E2E280079C169 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = Classes/Geometry/Circle.swift; sourceTree = "<group>"; };
+		E25AA88E1E6E2E280079C169 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Classes/Geometry/Line.swift; sourceTree = "<group>"; };
+		E25AA8951E6E2E400079C169 /* SoftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCell.swift; path = Classes/Shapes/SoftCell.swift; sourceTree = "<group>"; };
+		E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCellComposer.swift; path = Classes/Composition/SoftCellComposer.swift; sourceTree = "<group>"; };
+		E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCellComposition.swift; path = Classes/Composition/SoftCellComposition.swift; sourceTree = "<group>"; };
+		E25AA8A21E6E2EA60079C169 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = Classes/Scenes/GameScene.swift; sourceTree = "<group>"; };
 		E2C1C2AB1E6B54240018C58B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C1C2B01E6B54240018C58B /* SoftCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C1C2B31E6B54240018C58B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,11 +77,6 @@
 		E2C1C2ED1E6B54240018C58B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E2C1C2F01E6B54240018C58B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2C1C2F21E6B54240018C58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2C1C3171E6B58800018C58B /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = Geometry/Circle.swift; sourceTree = "<group>"; };
-		E2C1C31C1E6B58CF0018C58B /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Geometry/Line.swift; sourceTree = "<group>"; };
-		E2C1C3221E6B5E100018C58B /* SoftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCell.swift; path = Shapes/SoftCell.swift; sourceTree = "<group>"; };
-		E2C1C32C1E6B79B50018C58B /* SoftCellComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCellComposer.swift; path = Composition/SoftCellComposer.swift; sourceTree = "<group>"; };
-		E2C1C3301E6B7CE20018C58B /* SoftCellComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftCellComposition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E25AA8A11E6E2E9B0079C169 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E25AA8A21E6E2EA60079C169 /* GameScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
 		E2C1C2A21E6B54230018C58B = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +126,6 @@
 		E2C1C2A71E6B54230018C58B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E2C1C2A81E6B54230018C58B /* Actions.sks */,
-				E2C1C2A91E6B54230018C58B /* GameScene.sks */,
-				E2C1C2AA1E6B54230018C58B /* GameScene.swift */,
 				E2C1C3151E6B56080018C58B /* Classes */,
 				E2C1C2AB1E6B54240018C58B /* Assets.xcassets */,
 			);
@@ -182,6 +179,7 @@
 		E2C1C3151E6B56080018C58B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E25AA8A11E6E2E9B0079C169 /* Scenes */,
 				E2C1C3161E6B561E0018C58B /* Geometry */,
 				E2C1C3211E6B5DE60018C58B /* Shapes */,
 				E2C1C32B1E6B79380018C58B /* Composition */,
@@ -192,8 +190,8 @@
 		E2C1C3161E6B561E0018C58B /* Geometry */ = {
 			isa = PBXGroup;
 			children = (
-				E2C1C3171E6B58800018C58B /* Circle.swift */,
-				E2C1C31C1E6B58CF0018C58B /* Line.swift */,
+				E25AA88D1E6E2E280079C169 /* Circle.swift */,
+				E25AA88E1E6E2E280079C169 /* Line.swift */,
 			);
 			name = Geometry;
 			sourceTree = "<group>";
@@ -201,7 +199,7 @@
 		E2C1C3211E6B5DE60018C58B /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				E2C1C3221E6B5E100018C58B /* SoftCell.swift */,
+				E25AA8951E6E2E400079C169 /* SoftCell.swift */,
 			);
 			name = Shapes;
 			sourceTree = "<group>";
@@ -209,8 +207,8 @@
 		E2C1C32B1E6B79380018C58B /* Composition */ = {
 			isa = PBXGroup;
 			children = (
-				E2C1C32C1E6B79B50018C58B /* SoftCellComposer.swift */,
-				E2C1C3301E6B7CE20018C58B /* SoftCellComposition.swift */,
+				E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */,
+				E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */,
 			);
 			name = Composition;
 			sourceTree = "<group>";
@@ -322,9 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C1C2F61E6B54240018C58B /* GameScene.sks in Resources */,
 				E2C1C2B91E6B54240018C58B /* Main.storyboard in Resources */,
-				E2C1C2F31E6B54240018C58B /* Actions.sks in Resources */,
 				E2C1C2BC1E6B54240018C58B /* LaunchScreen.storyboard in Resources */,
 				E2C1C2FE1E6B54240018C58B /* Assets.xcassets in Resources */,
 			);
@@ -335,9 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C1C2E31E6B54240018C58B /* Main.storyboard in Resources */,
-				E2C1C2F81E6B54240018C58B /* GameScene.sks in Resources */,
 				E2C1C3001E6B54240018C58B /* Assets.xcassets in Resources */,
-				E2C1C2F41E6B54240018C58B /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C1C2F11E6B54240018C58B /* Main.storyboard in Resources */,
-				E2C1C2F91E6B54240018C58B /* GameScene.sks in Resources */,
 				E2C1C3011E6B54240018C58B /* Assets.xcassets in Resources */,
-				E2C1C2F51E6B54240018C58B /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,14 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C1C2FA1E6B54240018C58B /* GameScene.swift in Sources */,
-				E2C1C3181E6B58800018C58B /* Circle.swift in Sources */,
+				E25AA88F1E6E2E280079C169 /* Circle.swift in Sources */,
 				E2C1C2B61E6B54240018C58B /* GameViewController.swift in Sources */,
-				E2C1C3231E6B5E100018C58B /* SoftCell.swift in Sources */,
-				E2C1C3311E6B7CE20018C58B /* SoftCellComposition.swift in Sources */,
+				E25AA8A31E6E2EA60079C169 /* GameScene.swift in Sources */,
+				E25AA89B1E6E2E700079C169 /* SoftCellComposer.swift in Sources */,
+				E25AA89C1E6E2E700079C169 /* SoftCellComposition.swift in Sources */,
+				E25AA8901E6E2E280079C169 /* Line.swift in Sources */,
+				E25AA8961E6E2E400079C169 /* SoftCell.swift in Sources */,
 				E2C1C2B41E6B54240018C58B /* AppDelegate.swift in Sources */,
-				E2C1C31D1E6B58CF0018C58B /* Line.swift in Sources */,
-				E2C1C32D1E6B79B50018C58B /* SoftCellComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,14 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C1C2FC1E6B54240018C58B /* GameScene.swift in Sources */,
-				E2C1C31A1E6B58800018C58B /* Circle.swift in Sources */,
+				E25AA8931E6E2E300079C169 /* Circle.swift in Sources */,
 				E2C1C2E01E6B54240018C58B /* GameViewController.swift in Sources */,
-				E2C1C3251E6B5E100018C58B /* SoftCell.swift in Sources */,
-				E2C1C3321E6B7CE20018C58B /* SoftCellComposition.swift in Sources */,
+				E25AA8A41E6E2EA90079C169 /* GameScene.swift in Sources */,
+				E25AA89D1E6E2E720079C169 /* SoftCellComposer.swift in Sources */,
+				E25AA89F1E6E2E750079C169 /* SoftCellComposition.swift in Sources */,
 				E2C1C2DE1E6B54240018C58B /* AppDelegate.swift in Sources */,
-				E2C1C31F1E6B58CF0018C58B /* Line.swift in Sources */,
-				E2C1C32E1E6B79B50018C58B /* SoftCellComposer.swift in Sources */,
+				E25AA8971E6E2E430079C169 /* SoftCell.swift in Sources */,
+				E25AA8911E6E2E2E0079C169 /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,14 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C1C2FD1E6B54240018C58B /* GameScene.swift in Sources */,
-				E2C1C31B1E6B58800018C58B /* Circle.swift in Sources */,
+				E25AA8941E6E2E310079C169 /* Circle.swift in Sources */,
 				E2C1C2EE1E6B54240018C58B /* GameViewController.swift in Sources */,
-				E2C1C3261E6B5E100018C58B /* SoftCell.swift in Sources */,
-				E2C1C3331E6B7CE20018C58B /* SoftCellComposition.swift in Sources */,
+				E25AA8A51E6E2EAA0079C169 /* GameScene.swift in Sources */,
+				E25AA89E1E6E2E720079C169 /* SoftCellComposer.swift in Sources */,
+				E25AA8A01E6E2E750079C169 /* SoftCellComposition.swift in Sources */,
 				E2C1C2EC1E6B54240018C58B /* AppDelegate.swift in Sources */,
-				E2C1C3201E6B58CF0018C58B /* Line.swift in Sources */,
-				E2C1C32F1E6B79B50018C58B /* SoftCellComposer.swift in Sources */,
+				E25AA8981E6E2E440079C169 /* SoftCell.swift in Sources */,
+				E25AA8921E6E2E2E0079C169 /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +635,7 @@
 				E2C1C30E1E6B54240018C58B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2C1C30F1E6B54240018C58B /* Build configuration list for PBXNativeTarget "tvOS" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +644,7 @@
 				E2C1C3111E6B54240018C58B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2C1C3121E6B54240018C58B /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +653,7 @@
 				E2C1C3141E6B54240018C58B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
