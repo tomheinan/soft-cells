@@ -19,19 +19,34 @@ class GameScene: SKScene {
     fileprivate var softCellNode: SKShapeNode?
     
     func setUpScene() {
+        guard let view = view else { return }
         
         backgroundColor = Color.blue
         
-        let circle = Circle(inBoundingRect: frame)
-        let softCell = SoftCell(seed: 1234)
-        softCellNode = SKShapeNode.init(path: softCell.pathInCircle(circle))
-        softCellNode?.fillColor = Color.white
-        addChild(softCellNode!)
+        let center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
         
-        let frameNode = SKShapeNode(path: circle.path)
+        // composition frame
+        
+        let frameCircle = Circle(inBoundingRect: view.bounds)
+        let frameNode = SKShapeNode(path: frameCircle.path)
+        frameNode.position = center
         frameNode.strokeColor = Color.white
         frameNode.lineWidth = 4
         addChild(frameNode)
+        
+        let composition = SoftCellComposer.composition(for: UIImage(), in: view.bounds)
+        composition.forEach { (element) in
+            softCellNode = SKShapeNode.init(path: element.cell.pathInCircle(element.boundingCircle))
+            softCellNode?.position = center
+            softCellNode?.fillColor = Color.white
+            addChild(softCellNode!)
+            
+            let boundingNode = SKShapeNode(path: element.boundingCircle.path)
+            boundingNode.position = center
+            boundingNode.strokeColor = Color.white
+            boundingNode.lineWidth = 4
+            addChild(boundingNode)
+        }
     }
     
     override func didMove(to view: SKView) {

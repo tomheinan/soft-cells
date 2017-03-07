@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-struct Circle {
+struct Circle: Equatable {
     
     var center: CGPoint
     var radius: CGFloat
@@ -28,7 +28,7 @@ struct Circle {
             radius = rect.maxY * 0.5
         }
         
-        center = CGPoint(x: rect.midX, y: rect.midY)
+        center = CGPoint.zero
     }
     
     func tangentLineAtPoint(_ point: CGPoint) -> Line {
@@ -49,6 +49,10 @@ struct Circle {
         }
         
         return Line(point: point, slope: tangentialSlope)
+    }
+    
+    static func ==(lhs: Circle, rhs: Circle) -> Bool {
+        return lhs.center == rhs.center && lhs.radius == rhs.radius
     }
     
 }

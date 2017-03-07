@@ -17,11 +17,11 @@
 		E25AA8971E6E2E430079C169 /* SoftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8951E6E2E400079C169 /* SoftCell.swift */; };
 		E25AA8981E6E2E440079C169 /* SoftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8951E6E2E400079C169 /* SoftCell.swift */; };
 		E25AA89B1E6E2E700079C169 /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */; };
-		E25AA89C1E6E2E700079C169 /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */; };
+		E25AA89C1E6E2E700079C169 /* SoftCellSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellSceneElement.swift */; };
 		E25AA89D1E6E2E720079C169 /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */; };
 		E25AA89E1E6E2E720079C169 /* SoftCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */; };
-		E25AA89F1E6E2E750079C169 /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */; };
-		E25AA8A01E6E2E750079C169 /* SoftCellComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */; };
+		E25AA89F1E6E2E750079C169 /* SoftCellSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellSceneElement.swift */; };
+		E25AA8A01E6E2E750079C169 /* SoftCellSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA89A1E6E2E700079C169 /* SoftCellSceneElement.swift */; };
 		E25AA8A31E6E2EA60079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
 		E25AA8A41E6E2EA90079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
 		E25AA8A51E6E2EAA0079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
@@ -58,7 +58,7 @@
 		E25AA88E1E6E2E280079C169 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Classes/Geometry/Line.swift; sourceTree = "<group>"; };
 		E25AA8951E6E2E400079C169 /* SoftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCell.swift; path = Classes/Shapes/SoftCell.swift; sourceTree = "<group>"; };
 		E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCellComposer.swift; path = Classes/Composition/SoftCellComposer.swift; sourceTree = "<group>"; };
-		E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCellComposition.swift; path = Classes/Composition/SoftCellComposition.swift; sourceTree = "<group>"; };
+		E25AA89A1E6E2E700079C169 /* SoftCellSceneElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCellSceneElement.swift; path = Classes/Composition/SoftCellSceneElement.swift; sourceTree = "<group>"; };
 		E25AA8A21E6E2EA60079C169 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = Classes/Scenes/GameScene.swift; sourceTree = "<group>"; };
 		E2C1C2AB1E6B54240018C58B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C1C2B01E6B54240018C58B /* SoftCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */,
-				E25AA89A1E6E2E700079C169 /* SoftCellComposition.swift */,
+				E25AA89A1E6E2E700079C169 /* SoftCellSceneElement.swift */,
 			);
 			name = Composition;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 				E2C1C2B61E6B54240018C58B /* GameViewController.swift in Sources */,
 				E25AA8A31E6E2EA60079C169 /* GameScene.swift in Sources */,
 				E25AA89B1E6E2E700079C169 /* SoftCellComposer.swift in Sources */,
-				E25AA89C1E6E2E700079C169 /* SoftCellComposition.swift in Sources */,
+				E25AA89C1E6E2E700079C169 /* SoftCellSceneElement.swift in Sources */,
 				E25AA8901E6E2E280079C169 /* Line.swift in Sources */,
 				E25AA8961E6E2E400079C169 /* SoftCell.swift in Sources */,
 				E2C1C2B41E6B54240018C58B /* AppDelegate.swift in Sources */,
@@ -370,7 +370,7 @@
 				E2C1C2E01E6B54240018C58B /* GameViewController.swift in Sources */,
 				E25AA8A41E6E2EA90079C169 /* GameScene.swift in Sources */,
 				E25AA89D1E6E2E720079C169 /* SoftCellComposer.swift in Sources */,
-				E25AA89F1E6E2E750079C169 /* SoftCellComposition.swift in Sources */,
+				E25AA89F1E6E2E750079C169 /* SoftCellSceneElement.swift in Sources */,
 				E2C1C2DE1E6B54240018C58B /* AppDelegate.swift in Sources */,
 				E25AA8971E6E2E430079C169 /* SoftCell.swift in Sources */,
 				E25AA8911E6E2E2E0079C169 /* Line.swift in Sources */,
@@ -385,7 +385,7 @@
 				E2C1C2EE1E6B54240018C58B /* GameViewController.swift in Sources */,
 				E25AA8A51E6E2EAA0079C169 /* GameScene.swift in Sources */,
 				E25AA89E1E6E2E720079C169 /* SoftCellComposer.swift in Sources */,
-				E25AA8A01E6E2E750079C169 /* SoftCellComposition.swift in Sources */,
+				E25AA8A01E6E2E750079C169 /* SoftCellSceneElement.swift in Sources */,
 				E2C1C2EC1E6B54240018C58B /* AppDelegate.swift in Sources */,
 				E25AA8981E6E2E440079C169 /* SoftCell.swift in Sources */,
 				E25AA8921E6E2E2E0079C169 /* Line.swift in Sources */,

@@ -9,7 +9,7 @@
 import CoreGraphics
 import GameplayKit
 
-class SoftCell {
+class SoftCell: Equatable {
     
     let roundingFactor: CGFloat = 0.4
     
@@ -119,6 +119,10 @@ class SoftCell {
         path.closeSubpath()
         
         return path
+    }
+    
+    static func ==(lhs: SoftCell, rhs: SoftCell) -> Bool {
+        return lhs.seed == rhs.seed
     }
     
 }
