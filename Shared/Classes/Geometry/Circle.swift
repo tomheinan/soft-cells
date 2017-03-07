@@ -31,6 +31,11 @@ struct Circle: Equatable {
         center = CGPoint.zero
     }
     
+    init(center: CGPoint, radius: CGFloat) {
+        self.center = center
+        self.radius = radius
+    }
+    
     func tangentLineAtPoint(_ point: CGPoint) -> Line {
         let radialSlope: CGFloat
         

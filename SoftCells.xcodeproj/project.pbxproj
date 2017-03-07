@@ -25,6 +25,9 @@
 		E25AA8A31E6E2EA60079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
 		E25AA8A41E6E2EA90079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
 		E25AA8A51E6E2EAA0079C169 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A21E6E2EA60079C169 /* GameScene.swift */; };
+		E25AA8A81E6E647E0079C169 /* Image+CroppingTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A71E6E647E0079C169 /* Image+CroppingTo.swift */; };
+		E25AA8A91E6E647E0079C169 /* Image+CroppingTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A71E6E647E0079C169 /* Image+CroppingTo.swift */; };
+		E25AA8AA1E6E647E0079C169 /* Image+CroppingTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AA8A71E6E647E0079C169 /* Image+CroppingTo.swift */; };
 		E2C1C2B41E6B54240018C58B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2B31E6B54240018C58B /* AppDelegate.swift */; };
 		E2C1C2B61E6B54240018C58B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C1C2B51E6B54240018C58B /* GameViewController.swift */; };
 		E2C1C2B91E6B54240018C58B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C1C2B71E6B54240018C58B /* Main.storyboard */; };
@@ -60,6 +63,7 @@
 		E25AA8991E6E2E700079C169 /* SoftCellComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCellComposer.swift; path = Classes/Composition/SoftCellComposer.swift; sourceTree = "<group>"; };
 		E25AA89A1E6E2E700079C169 /* SoftCellSceneElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoftCellSceneElement.swift; path = Classes/Composition/SoftCellSceneElement.swift; sourceTree = "<group>"; };
 		E25AA8A21E6E2EA60079C169 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = Classes/Scenes/GameScene.swift; sourceTree = "<group>"; };
+		E25AA8A71E6E647E0079C169 /* Image+CroppingTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CroppingTo.swift"; path = "Classes/Extensions/Image+CroppingTo.swift"; sourceTree = "<group>"; };
 		E2C1C2AB1E6B54240018C58B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C1C2B01E6B54240018C58B /* SoftCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C1C2B31E6B54240018C58B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,14 @@
 				E25AA8A21E6E2EA60079C169 /* GameScene.swift */,
 			);
 			name = Scenes;
+			sourceTree = "<group>";
+		};
+		E25AA8A61E6E645C0079C169 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E25AA8A71E6E647E0079C169 /* Image+CroppingTo.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		E2C1C2A21E6B54230018C58B = {
@@ -183,6 +195,7 @@
 				E2C1C3161E6B561E0018C58B /* Geometry */,
 				E2C1C3211E6B5DE60018C58B /* Shapes */,
 				E2C1C32B1E6B79380018C58B /* Composition */,
+				E25AA8A61E6E645C0079C169 /* Extensions */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -352,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25AA88F1E6E2E280079C169 /* Circle.swift in Sources */,
+				E25AA8A81E6E647E0079C169 /* Image+CroppingTo.swift in Sources */,
 				E2C1C2B61E6B54240018C58B /* GameViewController.swift in Sources */,
 				E25AA8A31E6E2EA60079C169 /* GameScene.swift in Sources */,
 				E25AA89B1E6E2E700079C169 /* SoftCellComposer.swift in Sources */,
@@ -367,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25AA8931E6E2E300079C169 /* Circle.swift in Sources */,
+				E25AA8A91E6E647E0079C169 /* Image+CroppingTo.swift in Sources */,
 				E2C1C2E01E6B54240018C58B /* GameViewController.swift in Sources */,
 				E25AA8A41E6E2EA90079C169 /* GameScene.swift in Sources */,
 				E25AA89D1E6E2E720079C169 /* SoftCellComposer.swift in Sources */,
@@ -382,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25AA8941E6E2E310079C169 /* Circle.swift in Sources */,
+				E25AA8AA1E6E647E0079C169 /* Image+CroppingTo.swift in Sources */,
 				E2C1C2EE1E6B54240018C58B /* GameViewController.swift in Sources */,
 				E25AA8A51E6E2EAA0079C169 /* GameScene.swift in Sources */,
 				E25AA89E1E6E2E720079C169 /* SoftCellComposer.swift in Sources */,

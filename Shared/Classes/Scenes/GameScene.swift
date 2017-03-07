@@ -17,35 +17,53 @@ typealias Color = UIColor
 class GameScene: SKScene {
     
     fileprivate var softCellNode: SKShapeNode?
+    fileprivate let debugMode = true
     
     func setUpScene() {
         guard let view = view else { return }
         
-        backgroundColor = Color.blue
+        backgroundColor = Color.white
+        
+        #if os(OSX)
+            guard let image = NSImage(named: "Optimus") else { return }
+        #else
+            guard let image = UIImage(named: "Optimus") else { return }
+        #endif
         
         let center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
         
         // composition frame
         
-        let frameCircle = Circle(inBoundingRect: view.bounds)
-        let frameNode = SKShapeNode(path: frameCircle.path)
-        frameNode.position = center
-        frameNode.strokeColor = Color.white
-        frameNode.lineWidth = 4
-        addChild(frameNode)
+        if debugMode {
+            let frameCircle = Circle(inBoundingRect: view.bounds)
+            let frameNode = SKShapeNode(path: frameCircle.path)
+            frameNode.position = center
+            frameNode.strokeColor = Color(white: 0.9, alpha: 1.0)
+            frameNode.lineWidth = 4
+            addChild(frameNode)
+        }
         
-        let composition = SoftCellComposer.composition(for: UIImage(), in: view.bounds)
+        let composition = SoftCellComposer.composition(for: image, in: view.bounds)
         composition.forEach { (element) in
             softCellNode = SKShapeNode.init(path: element.cell.pathInCircle(element.boundingCircle))
-            softCellNode?.position = center
-            softCellNode?.fillColor = Color.white
+            softCellNode?.position = element.skPosition
+            softCellNode?.fillColor = element.color
+            softCellNode?.lineWidth = 0
+            
+            if let image = element.image {
+                let texture = SKTexture(image: image)
+                softCellNode?.fillTexture = texture
+            }
+            
             addChild(softCellNode!)
             
-            let boundingNode = SKShapeNode(path: element.boundingCircle.path)
-            boundingNode.position = center
-            boundingNode.strokeColor = Color.white
-            boundingNode.lineWidth = 4
-            addChild(boundingNode)
+            if debugMode {
+                let boundingNode = SKShapeNode(path: element.boundingCircle.path)
+                boundingNode.position = element.skPosition
+                boundingNode.strokeColor = Color(white: 0.9, alpha: 1.0)
+                boundingNode.lineWidth = 4
+                addChild(boundingNode)
+            }
         }
     }
     

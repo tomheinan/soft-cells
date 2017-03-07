@@ -13,6 +13,8 @@ struct SoftCellSceneElement: Hashable {
     var cell: SoftCell
     var boundingCircle: Circle
     var skPosition: CGPoint
+    var image: Image?
+    var color: Color
     
     var hashValue: Int {
         return "\(cell)\(boundingCircle)\(skPosition)".hashValue
