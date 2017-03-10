@@ -34,7 +34,7 @@ extension Image {
         
         // scale the crop frame
         
-        let scaleTransform = CGAffineTransform(scaleX: scaleFactor * pow(screenScale, 2), y: scaleFactor * pow(screenScale, 2))
+        let scaleTransform = CGAffineTransform(scaleX: scaleFactor * CGFloat(pow(screenScale, 2)), y: scaleFactor * CGFloat(pow(screenScale, 2)))
         let scaledCropFrame = initialCropFrame.applying(scaleTransform)
         
         // center the crop frame

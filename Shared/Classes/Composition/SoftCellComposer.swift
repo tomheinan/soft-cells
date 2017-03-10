@@ -61,7 +61,7 @@ class SoftCellComposer {
         
         for num in 0..<outerCell.numVertices {
             let satelliteCell = SoftCell(seed: seed + UInt64(num))
-            let satelliteBoundingCircle = Circle(center: CGPoint.zero, radius: 200.0 / screenScale)
+            let satelliteBoundingCircle = Circle(center: CGPoint.zero, radius: CGFloat(200.0 / screenScale))
             let initialPosition = outerCell.verticesOnCircle(outerCircle)[num]
             let translatedPosition = CGPoint(x: initialPosition.x + center.x, y: initialPosition.y + center.y)
             

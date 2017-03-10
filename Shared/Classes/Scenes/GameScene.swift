@@ -16,55 +16,40 @@ typealias Color = UIColor
 
 class GameScene: SKScene {
     
-    fileprivate var softCellNode: SKShapeNode?
-    fileprivate let debugMode = true
+    let debugMode = false
+    let compositionName = "composition"
+    
+    var index: Int = 0 {
+        didSet {
+            if index >= imageNames.count {
+                index = 0
+            }
+        }
+    }
+    
+    fileprivate let imageNames = [
+        "Tom", "Optimus", "AirportDog", "MST3K"
+    ]
     
     func setUpScene() {
         guard let view = view else { return }
         
         backgroundColor = Color.white
         
-        #if os(OSX)
-            guard let image = NSImage(named: "Optimus") else { return }
-        #else
-            guard let image = UIImage(named: "Optimus") else { return }
-        #endif
-        
-        let center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
-        
         // composition frame
         
         if debugMode {
             let frameCircle = Circle(inBoundingRect: view.bounds)
             let frameNode = SKShapeNode(path: frameCircle.path)
-            frameNode.position = center
+            frameNode.position = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
             frameNode.strokeColor = Color(white: 0.9, alpha: 1.0)
             frameNode.lineWidth = 4
             addChild(frameNode)
         }
         
-        let composition = SoftCellComposer.composition(for: image, in: view.bounds)
-        composition.forEach { (element) in
-            softCellNode = SKShapeNode.init(path: element.cell.pathInCircle(element.boundingCircle))
-            softCellNode?.position = element.skPosition
-            softCellNode?.fillColor = element.color
-            softCellNode?.lineWidth = 0
-            
-            if let image = element.image {
-                let texture = SKTexture(image: image)
-                softCellNode?.fillTexture = texture
-            }
-            
-            addChild(softCellNode!)
-            
-            if debugMode {
-                let boundingNode = SKShapeNode(path: element.boundingCircle.path)
-                boundingNode.position = element.skPosition
-                boundingNode.strokeColor = Color(white: 0.9, alpha: 1.0)
-                boundingNode.lineWidth = 4
-                addChild(boundingNode)
-            }
-        }
+        let firstImageName = imageNames[index]
+        let firstImage = loadImage(named: firstImageName)
+        displayComposition(for: firstImage)
     }
     
     override func didMove(to view: SKView) {
@@ -76,14 +61,78 @@ class GameScene: SKScene {
     }
 }
 
+extension GameScene {
+    
+    func loadImage(named string: String) -> Image {
+        #if os(OSX)
+            return NSImage(named: string)!
+        #else
+            return UIImage(named: string)!
+        #endif
+    }
+    
+    func displayComposition(for image: Image) {
+        guard let view = view else { return }
+        
+        let center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
+        
+        // composition frame
+        
+        if debugMode {
+            let frameCircle = Circle(inBoundingRect: view.bounds)
+            let frameNode = SKShapeNode(path: frameCircle.path)
+            frameNode.name = compositionName
+            frameNode.position = center
+            frameNode.strokeColor = Color(white: 0.9, alpha: 1.0)
+            frameNode.lineWidth = 4
+            addChild(frameNode)
+        }
+        
+        let composition = SoftCellComposer.composition(for: image, in: view.bounds)
+        composition.forEach { (element) in
+            let softCellNode = SKShapeNode.init(path: element.cell.pathInCircle(element.boundingCircle))
+            softCellNode.name = compositionName
+            softCellNode.position = element.skPosition
+            softCellNode.fillColor = element.color
+            softCellNode.lineWidth = 0
+            
+            if let image = element.image {
+                let texture = SKTexture(image: image)
+                softCellNode.fillTexture = texture
+            }
+            
+            addChild(softCellNode)
+            
+            if debugMode {
+                let boundingNode = SKShapeNode(path: element.boundingCircle.path)
+                boundingNode.name = compositionName
+                boundingNode.position = element.skPosition
+                boundingNode.strokeColor = Color(white: 0.9, alpha: 1.0)
+                boundingNode.lineWidth = 4
+                addChild(boundingNode)
+            }
+        }
+    }
+    
+    func loadNextComposition() {
+        enumerateChildNodes(withName: compositionName, using: { (node, stop) in
+            node.removeFromParent()
+        })
+        
+        index += 1
+        let image = loadImage(named: imageNames[index])
+        displayComposition(for: image)
+    }
+    
+}
+
 #if os(iOS) || os(tvOS)
 // touch-based event handling
 extension GameScene {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for _ in touches {
-            print("soft cell: \(self.softCellNode)")
-            //self.makeSpinny(at: t.location(in: self), color: SKColor.red)
+            loadNextComposition()
         }
     }
     
@@ -93,17 +142,9 @@ extension GameScene {
 #if os(OSX)
 // mouse-based event handling
 extension GameScene {
-
-    override func mouseDown(with event: NSEvent) {
-        
-    }
-    
-    override func mouseDragged(with event: NSEvent) {
-        
-    }
     
     override func mouseUp(with event: NSEvent) {
-        
+        loadNextComposition()
     }
 
 }
